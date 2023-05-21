@@ -1,0 +1,45 @@
+package Entidad;
+
+/**
+ Realizar una clase llamada CuentaBancaria en el paquete Entidades con los siguientes atributos: 
+ numeroCuenta(entero), dniCliente(entero largo), saldoActual. 
+ Agregar constructor vacío, con parámetros, getters y setters.
+ */
+public class CuentaBancaria {
+    public int numeroCuenta;
+    public long dniCliente;
+    public double saldoActual;
+// Constructor con parámetros
+    public CuentaBancaria(int numeroCuenta, long dniCliente, double saldoActual){
+        this.numeroCuenta = numeroCuenta;
+        this.dniCliente = dniCliente;
+        this.saldoActual = saldoActual;
+    }
+// Constructor vacio
+    public CuentaBancaria(){
+        this.numeroCuenta = 0;
+        this.dniCliente = 0;
+        this.saldoActual = 0;
+    }
+// Métodos get y set.
+    public int getNumeroCuenta(){
+        return numeroCuenta;
+    }
+    public void setNumeroCuenta(int numeroCuenta){
+        this.numeroCuenta = numeroCuenta;
+    }
+    public double getDniCliente(){
+        return dniCliente;
+    }
+    public void setDniCliente(long dniCliente){
+        this.dniCliente = dniCliente;
+    }
+    public double getSaldoActual(){
+        return saldoActual;
+    }
+    public void setSaldoActual(double saldoActual){
+        this.saldoActual = saldoActual;
+    }
+    
+}
+
