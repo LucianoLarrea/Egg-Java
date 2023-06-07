@@ -1,5 +1,7 @@
 package Entidad;
 
+import java.util.Date;
+
 /**
 Realizar una clase llamada Persona en el paquete de entidades que tengan los siguientes atributos: 
 nombre, edad, sexo (‘H’ para hombre, ‘M’ para mujer, ‘O’ para otro), peso y altura. 
@@ -11,20 +13,26 @@ public class Persona {
 // <modificador> <tipo> <nombre> Estos atributos irán al principio de la clase.
     public String nombre;
     public int edad;
-    public Float altura;
+    public double altura;
     public char sexo;
-    public Float peso;
+    public double peso;
+    public Date fechaNacimiento;
 // constructores: son métodos propios del objeto que nos permiten CREARLO.
 //    [<modificador>] <nombre de clase> ( <argumento>* ) {
 //   <sentencia>}
     public Persona() {
     }
-     public Persona(String nombre, int edad,Float altura, char sexo, Float peso) {
+     public Persona(String nombre, int edad,double altura, char sexo, double peso) {
         this.nombre = nombre;
         this.edad = edad;
         this.altura = altura;
         this.sexo = sexo;
         this.peso = peso;
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
+    public Persona(String luciano) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 // métodos propios: funciones que determinan el comportamiento de los objetos.
 // Todos los objetos de una misma clase tienen los mismos métodos y el mismo comportamiento.
@@ -33,6 +41,7 @@ public class Persona {
 //	<sentencias>*
 //   return valorRetorno;}
 //     * @return 
+
  */     
     public String getnombre() {
         return nombre;
@@ -46,10 +55,10 @@ public class Persona {
     public void setEdad(int edad) {
         this.edad = edad;
     }
-    public void setAltura(Float altura) {
+    public void setAltura(double altura) {
         this.altura = altura;
     }
-    public Float getAltura() {
+    public double getAltura() {
         return altura;
     }
     public void setSexo(char sexo) {
@@ -58,11 +67,20 @@ public class Persona {
     public char getSexo() {
         return sexo;
     }
-    public void setPeso(Float peso) {
+    public void setPeso(double peso) {
         this.peso = peso;
     }
-    public Float getPeso() {
+    public double getPeso() {
         return peso;
     }
+
+    public Date getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+
+    public void setFechaNacimiento(Date fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
+    
 }
 
